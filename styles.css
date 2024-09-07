@@ -1,113 +1,140 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
-  }
-  
-  /* Grid layout for overall page */
-  .container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
-  }
-  
-  /* Header styling */
-  header {
-    grid-row: 1;
-    background: #007bff;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin-bottom: 10px;
-  }
-  
-  header nav {
-    margin-top: 10px;
-  }
-  
-  header nav table {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  header nav a:hover {
-    background: #0056b3;
-    border-radius: 5px;
-  }
-  
-  /* Main content styling */
-  main {
-    grid-row: 2;
-    padding: 20px;
-    background: #fff;
-  }
-  
-  main img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  /* Grid layout for portfolio section */
-  ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  li img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer styling */
-  footer {
-    grid-row: 3;
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f4f8;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header styling */
+header {
+  grid-row: 1;
+  background: #6c63ff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background: #574bff;
+}
+
+/* Main content styling */
+main {
+  grid-row: 2;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Grid layout for portfolio section */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  list-style: none;
+}
+
+li {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #574bff;
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  grid-row: 3;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
