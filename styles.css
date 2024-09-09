@@ -116,6 +116,12 @@ a:hover {
   color: #574bff;
   text-decoration: underline;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Footer styling */
 footer {
