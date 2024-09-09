@@ -88,7 +88,7 @@ ul {
 
 li {
   background: #fff;
-  padding: 20px;
+  padding: 30px; /* Increased padding for more space around content */
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,9 +100,23 @@ li:hover {
 }
 
 li img {
-  width: 100%;
+  width: 80%; /* Increased width for larger images */
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+li h4 {
+  font-size: 1.25rem; /* Larger font size for the app titles */
+  margin-top: 15px;
+}
+
+li p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 a {
@@ -116,6 +130,7 @@ a:hover {
   color: #574bff;
   text-decoration: underline;
 }
+
 img {
   max-width: 100%;
   height: auto;
